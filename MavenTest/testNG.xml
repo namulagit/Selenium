@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression" preserve-order="true" parallel="classes" thread-count="2">
+    <listeners>
+        <!--<listener class-name="MavenProject.MavenTest.customListener.Listener">
+            
+        </listener>  
+        <listener class-name="MavenProject.MavenTest.customListener.RetryListener"></listener>
+        -->
+        
+    </listeners>
+    <test name="TC001_VerifyLoginWithInvalidCredentials">
+        <classes>
+            <class name="MavenProject.MavenTest.homepage.TC001_VerifyLoginWithInvalidCredentials"></class>
+        </classes>
+        
+    </test>
+    <test name="test2">
+        <classes>
+            <class name="MavenProject.MavenTest.homepage.TC001_VerifyLoginWithInvalidCredentials"></class>
+        </classes>
+        
+    </test>
+</suite>
