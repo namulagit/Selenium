@@ -24,6 +24,7 @@ public class PerfectNumber {
 	
 	public static void main(String args[])
 	{
+		
 		boolean result =isPerFect(27);
 		if(result)
 		{
