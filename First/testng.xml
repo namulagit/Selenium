@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="testing groups">
+  <groups>
+  <run>
+  <include name="testing"/>
+  <include name="car"/>
+  </run>
+  </groups>
+  <parameter name="user1" value="Pass1" />
+  <parameter name="user2" value="pass2"/>
+    <classes>
+      <class name="cap.testng.TestngDemo"/>
+      <class name="cap.testng.TestngTwo"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
