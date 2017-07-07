@@ -19,6 +19,7 @@ public class ExcelRead {
 			FileInputStream fis=new FileInputStream(excelPath);
 			workbook =new XSSFWorkbook(fis);
 			sheet=workbook.getSheetAt(0);
+			
 			int rowNumber=sheet.getLastRowNum();
 			int columnNumber=2;
 			tabData=new String[rowNumber][columnNumber];

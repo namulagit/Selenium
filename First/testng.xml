@@ -1,18 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-  <test name="testing groups">
-  <groups>
+<suite name="Suite"  thread-count="3" parallel ="tests" >
+  <test name="testing groups"  >
+  <!-- <groups>
   <run>
   <include name="testing"/>
   <include name="car"/>
   </run>
-  </groups>
+  </groups> -->
   <parameter name="user1" value="Pass1" />
   <parameter name="user2" value="pass2"/>
     <classes>
-      <class name="cap.testng.TestngDemo"/>
-      <class name="cap.testng.TestngTwo"/>
+      <!-- <class name="cap.testng.TestngDemo"/>
+      <class name="cap.testng.TestngTwo"/> -->
+      <class name="cap.testng.WebDriverTest"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="testing">
+  <!-- <groups>
+  <run>
+  <include name="testing"/>
+  <include name="car"/>
+  </run>
+  </groups> -->
+  <parameter name="user1" value="Pass1" />
+  <parameter name="user2" value="pass2"/>
+    <classes>
+      <!-- <class name="cap.testng.TestngDemo"/>
+      <class name="cap.testng.TestngTwo"/> -->
+      <class name="cap.testng.WebDriverTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
